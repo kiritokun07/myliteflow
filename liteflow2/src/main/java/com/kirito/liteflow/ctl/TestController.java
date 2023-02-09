@@ -21,14 +21,21 @@ public class TestController {
 
     @GetMapping("/test1")
     public String test1() {
-        return "Hello";
+        return "test1 success";
     }
 
     @GetMapping("/run1")
     public String run1() {
         log.info("run1");
         LiteflowResponse response = flowExecutor.execute2Resp("chain1", "arg");
-        return "success";
+        return "run1 success";
+    }
+
+    @GetMapping("/reload")
+    public String reload() {
+        log.info("reload");
+        flowExecutor.reloadRule();
+        return "reload success";
     }
 
 }

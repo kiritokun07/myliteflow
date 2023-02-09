@@ -4,7 +4,7 @@
 
     <chain name="chain1">
         THEN(
-        a, b, WHEN(c, d)
+         a,b,  WHEN(c, d)
         );
     </chain>
 
