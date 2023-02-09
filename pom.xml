@@ -17,6 +17,7 @@
 
     <modules>
         <module>liteflow1</module>
+        <module>liteflow2</module>
     </modules>
 
     <properties>
