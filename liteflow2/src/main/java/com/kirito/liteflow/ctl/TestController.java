@@ -45,4 +45,18 @@ public class TestController {
         return "run2 success";
     }
 
+    @GetMapping("/run3")
+    public String run3() {
+        log.info("run3");
+        LiteflowResponse response = flowExecutor.execute2Resp("chain3", "arg");
+        return "run3 success";
+    }
+
+    @GetMapping("/run4")
+    public String run4() {
+        log.info("run4");
+        LiteflowResponse response = flowExecutor.execute2Resp("chain4", "arg");
+        return "run4 success";
+    }
+
 }

@@ -10,7 +10,23 @@
 
     <chain name="chain2">
         THEN(
-        a, b, SWITCH(e).TO(c, d)
+        WHEN(a, b), SWITCH(e).TO(c, d)
+        );
+    </chain>
+
+
+    <chain name="chain3">
+        THEN(
+        c, chain2
+        );
+    </chain>
+
+    <chain name="chain4">
+        c2 = THEN(
+        WHEN(a, b), SWITCH(e).TO(c, d)
+        );
+        THEN(
+        c, c2
         );
     </chain>
 
