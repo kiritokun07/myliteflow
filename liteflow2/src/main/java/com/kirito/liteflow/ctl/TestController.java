@@ -38,4 +38,11 @@ public class TestController {
         return "reload success";
     }
 
+    @GetMapping("/run2")
+    public String run2() {
+        log.info("run2");
+        LiteflowResponse response = flowExecutor.execute2Resp("chain2", "arg");
+        return "run2 success";
+    }
+
 }
