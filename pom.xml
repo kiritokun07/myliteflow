@@ -11,6 +11,7 @@
     <modules>
         <module>liteflow1</module>
         <module>liteflow2</module>
+        <module>liteflow3</module>
     </modules>
 
     <parent>

@@ -13,5 +13,7 @@ graph TD
 	C --> End([结束]);
 	D --> End;
 ```
+- liteflow3 读nacos配置
+
 liteflow官网
 https://liteflow.yomahub.com/
